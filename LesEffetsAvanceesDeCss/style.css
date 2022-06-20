@@ -1,0 +1,194 @@
+/*
+--- Rappel des consignes ---
+
+OK .my-profile doit avoir tous ses coins arrondis à 12px 
+OK .my-profile doit avoir une ombre portée
+OK .profile-pic-wrapper doit avoir tous ses coins arrondis à 20px
+OK .profile-pic-wrapper doit avoir un fond en dégradé 
+  ce dégradé sera tourné de 45 degrés, 
+  partira de la couleur #FBDA61 pour arriver à la couleur #FF5ACD.
+OK #profile-pic doit être arrondie complètement et avoir une bordure
+ blanche (exprimée en HSL) de 6px
+OK #profile-name doit être écrit en bleu 
+   (exprimé en RGB)
+OK .favorite-place doit avoir l'image de fond suivante (http://placeimg.com/640/480/nature) 
+    alignée sur le haut et qui couvre toute la <div>
+OK .favorite-place doit avoir ses coins bas-droite
+ et bas-gauche arrondis à 12px,
+ les autres ne doivent pas être arrondis.
+OK .plane doit balayer l'écran depuis le
+ coin en bas à gauche de l'image de
+  votre endroit préféré, 
+  jusqu'au coin en haut à droite 
+  (pour cela, écrivez la propriété animation 
+  et la fonction @keyframes)
+- .like-button doit devenir plus gros 
+(utilisez transform : scale(1.1, 1.1)) 
+au passage de la souris pour montrer à 
+l'utilisateur qu'il peut liker l'image !
+*/
+
+@keyframes wheeeee {
+    from{ bottom:0%; left:0%}
+    to{ bottom:85%; left:85%}
+}
+
+.my-profile {
+    border-radius:12px;
+    box-shadow: 4px 4px 20px rgba(200, 200, 200, 0.7);
+}
+
+.profile-pic-wrapper {
+    border-radius: 20px;
+    background: linear-gradient(45deg,#FBDA61, #FF5ACD);
+}
+
+#profile-pic {
+    border-radius: 50%;
+    border: solid 6px;
+    border-color: hsl(0, 0%, 100%);
+}
+
+#profile-name {
+    color:rgb(9, 132, 225);
+}
+
+.favorite-place {
+    background-image: url("http://placeimg.com/640/480/nature");
+    background-position: top;
+    background-size: cover;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.plane {
+  position: absolute;
+  color: white;
+  animation: 5s ease 0.1s infinite running wheeeee;
+  font-size: 3rem;
+  transform: rotate(45deg);
+}
+
+.like-button {
+  transition: transform 0.5s ease;
+}
+
+.like-button:hover,
+.like-button:focus {
+    transform : scale(1.1, 1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ce code ne fait pas partie de l'exercice et sert juste pour l'affichage de cet exemple */
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.card {
+  width: 550px;
+  margin: 80px auto;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.profile-info {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 2;
+  padding: 0 20px;
+}
+
+h2, h5 {
+  margin: 4px 0;
+}
+
+.profile-pic-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: calc(100% + 30px);
+  transform: translateX(-15px);
+  z-index: 2;
+}
+
+#profile-pic {
+  width: 120px;
+  height: 120px;
+}
+
+.favorite-place {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transform: translateY(-10px);
+}
+
+.plane {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  transform: rotate(45deg);
+}
+
+.like-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 20px;
+  background: #ff4757;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.like-button > i {
+  margin: 0 7px;
+}
