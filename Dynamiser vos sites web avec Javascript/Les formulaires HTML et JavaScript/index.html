@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Les formulaires HTML et JavaScript</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form id="monformulaire">
+      <div class="field">
+        <label for="identifiant">Identifiant</label>
+        <input type="text" id="identifiant" name="identifiant">
+        <span class="errormessage" id="identifiantErrorMessage"></span>
+    </div>
+      <div class="field">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password">
+        <span class="errormessage" id="passwordErrorMessage"></span>
+    </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <span class="errormessage" id="emailErrorMessage"></span>
+    </div>
+      <div class="field">
+        <label for="email-confirm">Confirmation de l'email</label>
+        <input type="text" id="email-confirm" name="email-confirm">
+        <span class="errormessage" id="email-confirmErrorMessage"></span>
+    </div>
+      <div class="field">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+      </div>
+      <div class="field">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom">
+      </div>   
+      <div class="field">
+        <label for="annee">Année de naissance</label>
+        <select id="annee" name="annee">
+          <option value="1980">1980</option>
+          <option value="1981">1981</option>
+          <option value="1982">1982</option>
+          <option value="1983">1983</option>
+          <option value="1984">1984</option>
+          <option value="1985">1985</option>
+          <option value="1986">1986</option>
+          <option value="1987">1987</option>
+          <option value="1988">1988</option>
+          <option value="1989">1989</option>
+          <option value="1990">1990</option>
+        </select>  
+        <div id="age"></div>
+      </div>           
+      <input type="submit" id="btn-submit" name="btn-submit">
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
