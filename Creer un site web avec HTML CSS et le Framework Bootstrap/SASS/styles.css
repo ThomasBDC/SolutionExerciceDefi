@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* Code SCSS qui permet de gérer le rythme des titres */
+.color-info {
+  color: rgb(40, 40, 122);
+}
+
+.background-info {
+  background-color: rgb(40, 40, 122);
+}
+
+.border-info {
+  border: solid 1px rgb(40, 40, 122);
+}
+
+.color-success {
+  color: rgb(45, 94, 45);
+}
+
+.background-success {
+  background-color: rgb(45, 94, 45);
+}
+
+.border-success {
+  border: solid 1px rgb(45, 94, 45);
+}
+
+.color-error {
+  color: rgb(248, 115, 115);
+}
+
+.background-error {
+  background-color: rgb(248, 115, 115);
+}
+
+.border-error {
+  border: solid 1px rgb(248, 115, 115);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+$info: rgb(40, 40, 122);
+$success: rgb(45, 94, 45);
+$error: rgb(248, 115, 115);
+
+/* Code SCSS qui permet de gérer le rythme des titres */
+@each $color, $color-name in ($info, "info"), ($success, "success"), ($error, "error")
+{
+    .color-#{$color-name} {
+        color: $color;
+    }
+
+    .background-#{$color-name} {
+        background-color: $color;
+    }
+
+    .border-#{$color-name} {
+        border: solid 1px $color;
+    }
+}
