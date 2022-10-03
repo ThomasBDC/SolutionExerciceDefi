@@ -1,0 +1,11 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  
+  .product {
+    margin: 2rem;
+  }
