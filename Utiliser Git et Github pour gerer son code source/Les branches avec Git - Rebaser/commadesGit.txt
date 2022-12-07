@@ -1,0 +1,66 @@
+Ouvre mon explorateur de fichier
+Je crée un dossier vide DefiRebaser
+Je l'Ouvre
+Clic droit
+    ->git bash here
+
+
+/> git init
+
+créer le fichier index.html dans le dossier
+Mettre le contenu du fichier (sur l'exo)
+
+/> git add index.html
+/> git commit -m 'Add vegetable list'
+
+Aller sur github pour créer un nouveau repo
+
+/> git remote add origin https://github.com/ThomasBDC/GitRebaserExo.git
+/> git push -u origin master
+
+/> git checkout -b fix-typos
+/> sed -i 's/Pome/Pomme/g; s/Carote/Carotte/g; s/Tommate/Tomate/g; s/Cerisse/Cerise/g' index.html
+
+
+/> git add index.html
+/> git push
+
+/> git checkout master
+/> git checkout -b remove-fruits
+/> sed -i '/Pome/d; /Poire/d; /Cerisse/d' index.html
+
+/> git add .
+/> git commit -m "Remove fruits from vegetable liste"
+/> git push -u origin remove-fruits
+
+/> git checkout master
+/> git merge fix-typos
+/> git push
+/> git branch -D fix-typos
+/> git push -d origin fix-typos
+
+/> git checkout remove-fruits
+/> git rebase master
+->> Aller résoudre les conflits dans le fichier
+/> git add .
+/> git rebase -- continue
+/> git push -f
+
+
+Modifier le fichier
+/> git add . 
+/> git commit -m "Add onion"
+/> git push
+
+/> git rebase -i HEAD ^^
+(faire le squash)
+/> git push -f
+
+git checkout master
+git merge remove-fruits
+git push
+git branch -d remove-fruits
+git push -d origin remove-fruits
+
+Lien du repos du live
+-> https://github.com/ThomasBDC/GitRebaserExo/commits/master
