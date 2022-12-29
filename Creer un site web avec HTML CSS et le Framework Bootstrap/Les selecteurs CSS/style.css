@@ -1,0 +1,64 @@
+body{
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+::selection {
+    background: rgba(134,183,31, 0.2);
+}
+
+/* MENU  */
+
+.menu{
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:#B9482B;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+
+.menu li a:visited{
+    color:#FF00FF;
+}
+
+.menu li:first-child::after{
+    content: "\0020 \2302";
+}
+
+/*TITRES*/
+
+h1{
+    color: #BC8E14;
+}
+
+h2, h3, h4{
+    color: #729E0E;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+article h2::before{
+    content: "\2708";
+}
+
+/* PARAGRAPHES */ 
+section > p {
+    padding: 10px;
+    border: solid 1px gray;
+}
+
+p:not(.description, .informations){
+    font-style: italic;
+}
