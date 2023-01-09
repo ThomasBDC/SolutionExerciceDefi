@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <header class="py-2">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-8">
+            <h2>Mon titre de site</h2>
+          </div>
+          <div class="col-4">
+            <div class="d-flex align-item-center justify-content-end p-2">
+              <div class="rounded-circle text-center text-white bg-secondary p-2">
+                <svg class="bi bi-person-fill" width="30px" height="30px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ordinateurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accessoires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cartes mères</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cartes graphiques</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a href="#">A propos</a>
+            </span>
+          </div>
+        </nav>
+      </header>
+
+      <section class="mt-4">
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-xl-3">
+            <aside>
+              <h4>Derniers articles</h4>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                  Mon premiere article
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Mon second article</a>
+                <a href="#" class="list-group-item list-group-item-action">Mon troisieme article</a>
+                <a href="#" class="list-group-item list-group-item-action">Mon quatrieme article</a>
+                <a href="#" class="list-group-item list-group-item-action">Mon cinquieme article</a>
+              </div>
+            </aside>
+          </div>
+          <div class="col">
+            <article class="row justify-content-center text-justify">
+              <div class="col">
+                <h1>Mon premier article</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique augue non nibh imperdiet dictum. In hac habitasse platea dictumst. 
+                  Donec porttitor odio ante, vitae rutrum nunc fringilla id. Etiam fermentum tellus eu arcu malesuada, consectetur semper arcu consectetur. 
+                  In hac habitasse platea dictumst. Sed elit metus, efficitur non urna vel, consectetur mollis nunc. Duis porttitor orci nulla, et euismod dolor condimentum ac. 
+                <p>In urna lorem, maximus vitae dolor in, ullamcorper maximus purus. Mauris lacus mauris, facilisis vel mattis ac, blandit rutrum ante. </p>
+                  Morbi fringilla enim in justo molestie, vitae euismod est faucibus. Sed aliquam ligula sed orci sagittis condimentum. Ut porta orci eget ex interdum, 
+                  ac pellentesque odio sodales. Nam vel elit non dui eleifend dignissim id dapibus massa.</p>  
+                <p>Vestibulum vel placerat odio. Nullam maximus sagittis sapien nec accumsan. Fusce at auctor odio. Fusce ut nunc vitae diam iaculis laoreet eu et nulla. 
+                  Donec lacus ante, pulvinar eu mollis a, auctor vitae ex. Sed ut molestie ligula. Pellentesque quis eros et sapien lacinia suscipit. 
+                  Suspendisse tristique dui at dapibus laoreet. Fusce viverra eget elit nec laoreet.</p>
+                
+                <h4>Prix des écrans</h4>
+                <div class="table-responsive">
+                  <table class="table table-striped text-center">
+                    <thead class="bg-primary text-white">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">15 pouces</th>
+                        <th scope="col">17 pouces</th>
+                        <th scope="col">19 pouces</th>
+                        <th scope="col">21 pouces</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Asus</th>
+                        <td>100€</td>
+                        <td>150€</td>
+                        <td>200€</td>
+                        <td>300€</td>
+                        <td><svg role="button" class="bi bi-bucket text-primary" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 1.5A4.5 4.5 0 003.5 6h-1a5.5 5.5 0 1111 0h-1A4.5 4.5 0 008 1.5z" clip-rule="evenodd"/>
+                          <path fill-rule="evenodd" d="M1.61 5.687A.5.5 0 012 5.5h12a.5.5 0 01.488.608l-1.826 8.217a1.5 1.5 0 01-1.464 1.175H4.802a1.5 1.5 0 01-1.464-1.175L1.512 6.108a.5.5 0 01.098-.42zm1.013.813l1.691 7.608a.5.5 0 00.488.392h6.396a.5.5 0 00.488-.392l1.69-7.608H2.624z" clip-rule="evenodd"/>
+                        </svg></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dell</th>
+                        <td>80€</td>
+                        <td>120€</td>
+                        <td>140€</td>
+                        <td>200€</td>
+                        <td><svg role="button" class="bi bi-bucket text-primary" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.5A4.5 4.5 0 003.5 6h-1a5.5 5.5 0 1111 0h-1A4.5 4.5 0 008 1.5z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M1.61 5.687A.5.5 0 012 5.5h12a.5.5 0 01.488.608l-1.826 8.217a1.5 1.5 0 01-1.464 1.175H4.802a1.5 1.5 0 01-1.464-1.175L1.512 6.108a.5.5 0 01.098-.42zm1.013.813l1.691 7.608a.5.5 0 00.488.392h6.396a.5.5 0 00.488-.392l1.69-7.608H2.624z" clip-rule="evenodd"/>
+                      </svg></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Acer</th>
+                        <td>130€</td>
+                        <td>180€</td>
+                        <td>260€</td>
+                        <td>350€</td>
+                        <td><svg role="button" class="bi bi-bucket text-primary" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 1.5A4.5 4.5 0 003.5 6h-1a5.5 5.5 0 1111 0h-1A4.5 4.5 0 008 1.5z" clip-rule="evenodd"/>
+                          <path fill-rule="evenodd" d="M1.61 5.687A.5.5 0 012 5.5h12a.5.5 0 01.488.608l-1.826 8.217a1.5 1.5 0 01-1.464 1.175H4.802a1.5 1.5 0 01-1.464-1.175L1.512 6.108a.5.5 0 01.098-.42zm1.013.813l1.691 7.608a.5.5 0 00.488.392h6.396a.5.5 0 00.488-.392l1.69-7.608H2.624z" clip-rule="evenodd"/>
+                        </svg></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Samsung</th>
+                        <td>60€</td>
+                        <td>100€</td>
+                        <td>160€</td>
+                        <td>240€</td>
+                        <td><svg role="button" class="bi bi-bucket text-primary" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 1.5A4.5 4.5 0 003.5 6h-1a5.5 5.5 0 1111 0h-1A4.5 4.5 0 008 1.5z" clip-rule="evenodd"/>
+                          <path fill-rule="evenodd" d="M1.61 5.687A.5.5 0 012 5.5h12a.5.5 0 01.488.608l-1.826 8.217a1.5 1.5 0 01-1.464 1.175H4.802a1.5 1.5 0 01-1.464-1.175L1.512 6.108a.5.5 0 01.098-.42zm1.013.813l1.691 7.608a.5.5 0 00.488.392h6.396a.5.5 0 00.488-.392l1.69-7.608H2.624z" clip-rule="evenodd"/>
+                        </svg></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  </body>
+</html>
