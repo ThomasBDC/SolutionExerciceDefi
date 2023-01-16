@@ -1,0 +1,33 @@
+<code>
+    
+    <body>
+        <input id="button" type="button" value="Click to Populate SELECT with JSON" />
+        
+        <!--The SELECT element.-->
+        <select id="select">
+            <option value="">-- Select --</option>
+        </select>
+    </body>
+
+<script>  
+// JSON.
+	
+	const json = '[{"id":33,"name":"Boni Avenue"},{"id":34,"name":"Shaw Boulevard"},{"id":35,"name":"Rue Madeleine"},{"id":36,"name":"Shaw Boulevard"}]';
+
+    document.getElementById("button").addEventListener("click", ()=>{
+        //Transformer le string en objet json
+        let jsonObj = JSON.parse(json);
+        //Parcourir mon objet JSON
+        jsonObj.forEach(element => {
+            //Pour chaque élément, l'ajouter au select 
+            console.log(element);
+            let myOpt = document.createElement("option");
+            myOpt.text=element.name;
+            myOpt.value=element.id;
+            document.getElementById("select").add(myOpt);
+        });
+        
+    });
+</script>
+
+</code>
