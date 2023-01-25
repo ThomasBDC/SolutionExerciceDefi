@@ -1,0 +1,41 @@
+li {
+    width: 90%;
+    list-style-type: none;
+        margin: 15px 0;
+      }
+
+  li:hover {
+    cursor: pointer;
+      }
+      .text-element {
+              display: none;
+     padding: 10px 0;
+            width: 100%;
+         text-overflow: ellipsis;
+         overflow: hidden;
+     white-space: nowrap;
+    }	
+       
+  .title{
+        padding: 0 10px;
+      }
+      
+      @media screen and (min-width: 741px) {
+    .menu{
+          display: none;
+        }
+      
+        .text-element {
+          display: block;
+        }
+      }
+  
+      @media screen and (min-width: 1024px) {
+        li {
+          list-style-type: initial;
+        }
+      
+        .text-element {
+          white-space: normal;
+        }
+      }

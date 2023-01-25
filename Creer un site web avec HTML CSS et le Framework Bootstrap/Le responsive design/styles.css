@@ -1,0 +1,42 @@
+/*En dehors de la media queries, c'est pour toutes les tailles
++ taille smartphone 
+*/
+li{
+    margin-bottom: 15px;;
+    list-style: none;
+}
+
+li p.paragraph{
+    display: none;
+}
+
+/*Taille dite 'tablette'
+ON va mettre les trois petits points
+*/
+@media screen and (min-width : 768px) {
+    
+     li h2.title{
+        display: none;
+    }
+
+     li p.paragraph {
+        display: block;
+        /*Mettre le p sur une ligne*/
+        white-space: nowrap;
+        /*Enlever le scroll*/
+        overflow: hidden;
+        /*Ajouter les ... */
+        text-overflow: ellipsis;
+    }  
+}
+
+/*Taille dite 'PC' 
+ON affiche le texte complet*/
+@media screen and (min-width : 992px) {
+    li p.paragraph{
+        /* On annule les ... de la taille tablette */
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    } 
+}
