@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        /**
+        Attention, ce CSS est là uniquement pour rendre le formulaire "agréable" à la lecture sans que vous n'ayez
+        à récupérer deux fichiers distincts.
+        Dans un cas d'usage "réel", ces éléments doivent être externalisés
+            */
+        body {
+            font-family: Calibri, serif;
+        }
+
+        form {
+            max-width: 75%;
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            border: 1px solid lightgray;
+            background-color: rgba(225, 233, 255, 0.25);
+        }
+
+        legend {
+            font-style: italic;
+            font-size: 1.1em;
+            padding: 5px;
+        }
+
+        form input, form textarea {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+
+        button[type=submit] {
+            padding: 10px;
+            margin-top: 15px;
+            width: auto;
+            display: block;
+        }
+
+        .help-text {
+            color: #2b2b2b;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Accès utilisateur</h1>
+<form id="form">
+    <fieldset>
+        <legend>Création de votre compte</legend>
+        <label for="name">Nom d'utilisateur</label>
+        <input type="text" name="name" id="name" class="js-hasHelpText" required placeholder="Saisissez votre nom">
+        <label for="email">Adresse e-mail</label>
+        <input type="text" name="email" id="email" class="js-hasHelpText" required placeholder="Saisissez votre email">
+
+        <label for="password">Votre mot de passe</label>
+        <input type="password" name="password" id="password" class="js-hasHelpText" required placeholder="Saisissez votre mot de passe">
+
+        <label for="birthDate">Votre date de naissance</label>
+        <input type="date" name="birthDate" id="birthDate" class="js-hasHelpText" required placeholder="Saisissez votre date de naissance">
+
+        <label for="comment">Commentaire</label>
+        <textarea name="comment" id="comment" class="js-hasHelpText" cols="30" rows="10"></textarea>
+
+        <button type="submit">Soumettre le formulaire</button>
+    </fieldset>
+</form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
